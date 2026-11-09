@@ -30,3 +30,18 @@
 .bar__fill--new { animation-delay: 350ms; }
 @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 .run__foot { padding: 0.9rem 1.25rem; border-top: 1px solid var(--line); color: var(--ink-soft); }
+
+/* Generic section layout */
+.section { padding-block: clamp(2.5rem, 7vw, 5rem); border-top: 1px solid var(--line); }
+.section__grid { display: grid; gap: 1.5rem; }
+@media (min-width: 60rem) { .section__grid { grid-template-columns: 14rem 1fr; gap: 4rem; } }
+.section__title { font-size: var(--step-2); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.section__body { max-width: 44rem; display: grid; gap: 1.25rem; }
+.lead { font-size: var(--step-1); line-height: 1.4; font-weight: 500; letter-spacing: -0.01em; }
+
+/* About: facts list */
+.facts { margin-top: 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.facts__row { display: grid; gap: 0.15rem; padding: 0.9rem 1.25rem; }
+.facts__row + .facts__row { border-top: 1px solid var(--line); }
+.facts dt { font-family: var(--font-mono); font-size: var(--step--1); color: var(--ink-soft); }
+@media (min-width: 40rem) { .facts__row { grid-template-columns: 8rem 1fr; gap: 1.5rem; } }
