@@ -10,8 +10,8 @@ Personal portfolio site of a QA Automation Engineer (Java), aimed at recruiters 
 
 ## Stack
 - /site: plain static HTML + CSS + vanilla JS, no frameworks, no build step.
-- /tests: Java 21, Gradle (Kotlin DSL), JUnit 5, Playwright for Java.
-- CI: GitHub Actions. Deploy: GitHub Pages from /site.
+- No autotests in this project. Check changes manually with Playwright MCP.
+- Deploy: GitHub Actions to GitHub Pages from /site.
 
 ## Site requirements
 - English only. Sections: Hero, About, Experience, Skills, Projects, Contacts, link to PDF resume.
