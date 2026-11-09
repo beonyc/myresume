@@ -52,23 +52,34 @@
           </div>
         </div>
 
-        <figure class="run" aria-labelledby="run-title" style="margin:0">
-          <div class="run__head mono">
-            <span id="run-title">Regression run, Alfa-Bank</span>
-            <span>~3,000 tests</span>
+        <section class="showcase" aria-roledescription="carousel" aria-label="Achievements">
+          <ul class="showcase__track" id="showcase-track" tabindex="0" aria-label="Achievement slides, scroll sideways">
+            <li class="slide" aria-roledescription="slide">
+              <figure class="run" aria-labelledby="run-title">
+                <div class="run__head mono">
+                  <span id="run-title">Regression run, Alfa-Bank</span>
+                  <span>~3,000 tests</span>
+                </div>
+                <div class="run__body">
+                  <div>
+                    <div class="run__row-label"><span class="mono">Before: previous framework</span><strong>45 min</strong></div>
+                    <div class="bar" role="img" aria-label="45 minutes"><div class="bar__fill bar__fill--old" style="width:100%"></div></div>
+                  </div>
+                  <div>
+                    <div class="run__row-label"><span class="mono">After: framework I built</span><strong>9 min</strong></div>
+                    <div class="bar" role="img" aria-label="9 minutes, 5 times shorter"><div class="bar__fill bar__fill--new" style="width:20%"></div></div>
+                  </div>
+                </div>
+                <figcaption class="run__foot mono">Same scope, 5× faster. Tests migrated to the new framework.</figcaption>
+              </figure>
+            </li>
+          </ul>
+          <div class="showcase__controls">
+            <button class="showcase__btn" type="button" id="showcase-prev" aria-label="Previous achievement" aria-controls="showcase-track">&larr;</button>
+            <p class="showcase__count mono" id="showcase-count" aria-live="polite">1 / 1</p>
+            <button class="showcase__btn" type="button" id="showcase-next" aria-label="Next achievement" aria-controls="showcase-track">&rarr;</button>
           </div>
-          <div class="run__body">
-            <div>
-              <div class="run__row-label"><span class="mono">Before: previous framework</span><strong>45 min</strong></div>
-              <div class="bar" role="img" aria-label="45 minutes"><div class="bar__fill bar__fill--old" style="width:100%"></div></div>
-            </div>
-            <div>
-              <div class="run__row-label"><span class="mono">After: framework I built</span><strong>9 min</strong></div>
-              <div class="bar" role="img" aria-label="9 minutes, 5 times shorter"><div class="bar__fill bar__fill--new" style="width:20%"></div></div>
-            </div>
-          </div>
-          <figcaption class="run__foot mono">Same scope, 5× faster. Tests migrated to the new framework.</figcaption>
-        </figure>
+        </section>
       </div>
     </section>
 
@@ -202,5 +213,6 @@
   </main>
 
   <script src="js/theme.js"></script>
+  <script src="js/showcase.js"></script>
 </body>
 </html>
