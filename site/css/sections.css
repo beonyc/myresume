@@ -42,7 +42,7 @@
 .facts { margin-top: 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .facts__row { display: grid; gap: 0.15rem; padding: 0.9rem 1.25rem; }
 .facts__row + .facts__row { border-top: 1px solid var(--line); }
-.facts dt { font-family: var(--font-mono); font-size: var(--step--1); color: var(--ink-soft); }
+.facts dt { font-family: var(--font-sans); font-size: var(--step-0); font-weight: 700; color: var(--ink); letter-spacing: -0.01em; padding-left: 0.75rem; border-left: 3px solid var(--pass); }
 @media (min-width: 40rem) { .facts__row { grid-template-columns: 8rem 1fr; gap: 1.5rem; } }
 
 /* Experience: pipeline timeline */
@@ -79,16 +79,6 @@
 .contacts a { font-weight: 600; width: fit-content; padding-block: 0.25rem; }
 @media (min-width: 40rem) { .contacts li { grid-template-columns: 8rem 1fr; gap: 1.5rem; align-items: center; } }
 
-/* Skills: make row names stand out from the tags */
-.facts--skills .facts__row dt {
-  font-family: var(--font-sans);
-  font-size: var(--step-0);
-  font-weight: 700;
-  color: var(--ink);
-  letter-spacing: -0.01em;
-  padding-left: 0.75rem;
-  border-left: 3px solid var(--pass);
-}
 
 /* Achievements showcase (carousel) */
 .showcase { min-width: 0; display: grid; gap: 0.75rem; }
