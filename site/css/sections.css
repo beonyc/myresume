@@ -64,3 +64,28 @@
 .job__list li::before { content: ""; position: absolute; left: 0; top: 0.7em; width: 0.5rem; height: 2px; background: var(--ink-soft); }
 .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .chips li { font-family: var(--font-mono); font-size: var(--step--1); padding: 0.1rem 0.55rem; border: 1px solid var(--line); border-radius: 3px; background: var(--surface); color: var(--ink-soft); }
+
+/* Skills */
+.facts--skills { margin-top: 0; max-width: 48rem; }
+.facts--skills .facts__row { align-items: baseline; }
+@media (min-width: 40rem) { .facts--skills .facts__row { grid-template-columns: 11rem 1fr; } }
+.facts--skills dd { display: grid; gap: 0.5rem; }
+.note { color: var(--ink-soft); font-size: var(--step--1); }
+
+/* Projects */
+.cards { display: grid; gap: 1.25rem; max-width: 48rem; }
+@media (min-width: 70rem) { .cards { grid-template-columns: 1fr 1fr; max-width: none; } }
+.card { display: grid; gap: 0.75rem; align-content: start; padding: 1.25rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.card h3 { font-size: var(--step-1); font-weight: 800; letter-spacing: -0.02em; }
+.card__where { color: var(--ink-soft); }
+.card__result { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; color: var(--ink-soft); }
+
+/* Contacts */
+.contacts { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.contacts li { display: grid; gap: 0.1rem; padding: 0.9rem 1.25rem; }
+.contacts li + li { border-top: 1px solid var(--line); }
+.contacts .mono { color: var(--ink-soft); }
+.contacts a { font-weight: 600; width: fit-content; padding-block: 0.25rem; }
+@media (min-width: 40rem) { .contacts li { grid-template-columns: 8rem 1fr; gap: 1.5rem; align-items: center; } }
+
+.site-footer { border-top: 1px solid var(--line); padding-block: 1.5rem; color: var(--ink-soft); }
