@@ -1,0 +1,70 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  line-height: 1.6;
+}
+h1, h2, h3, p, ul, dl, dd { margin: 0; }
+ul { padding: 0; list-style: none; }
+a { color: var(--link); text-underline-offset: 0.2em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+
+.wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+.mono { font-family: var(--font-mono); font-size: var(--step--1); }
+
+.skip-link {
+  position: absolute; left: var(--gutter); top: -4rem; z-index: 100;
+  background: var(--ink); color: var(--bg); padding: 0.6rem 1rem; border-radius: var(--radius);
+}
+.skip-link:focus { top: 0.75rem; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* status badges (Allure-like) */
+.badge {
+  display: inline-flex; align-items: center; gap: 0.4em;
+  font-family: var(--font-mono); font-size: var(--step--1); font-weight: 600;
+  padding: 0.1em 0.6em; border-radius: 3px; line-height: 1.5;
+}
+.badge::before { content: ""; width: 0.55em; height: 0.55em; border-radius: 50%; background: currentColor; }
+.badge--pass { color: var(--pass); background: var(--pass-bg); }
+.badge--fail { color: var(--fail); background: var(--fail-bg); }
+.badge--warn { color: var(--warn); background: var(--warn-bg); }
+
+.btn {
+  display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 1.25rem;
+  border-radius: var(--radius); border: 2px solid var(--ink);
+  font-weight: 600; text-decoration: none; color: var(--ink); background: transparent;
+}
+.btn:hover { background: var(--surface-2); }
+.btn--primary { background: var(--ink); color: var(--bg); }
+.btn--primary:hover { background: var(--ink-soft); border-color: var(--ink-soft); }
+
+/* header */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 3.5rem; }
+.brand { font-family: var(--font-mono); font-weight: 700; color: var(--ink); text-decoration: none; }
+.nav { display: flex; align-items: center; gap: 0.25rem 1.25rem; flex-wrap: wrap; }
+.nav a { color: var(--ink-soft); text-decoration: none; font-size: var(--step--1); padding: 0.5rem 0; font-weight: 500; }
+.nav a:hover { color: var(--ink); text-decoration: underline; }
+.theme-toggle {
+  min-width: 2.75rem; min-height: 2.75rem; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); color: var(--ink); cursor: pointer; font-family: var(--font-mono); font-size: var(--step--1);
+}
+.theme-toggle:hover { background: var(--surface-2); }
+@media (max-width: 40rem) { .nav a { display: none; } }

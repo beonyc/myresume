@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iurii Sugrobov — QA Automation Engineer</title>
+  <meta name="description" content="QA Fullstack Engineer working with Java, Kotlin and TypeScript. UI, API and database test automation, built from scratch. Open to relocation.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload"href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <script>
+    /* set theme before first paint to avoid a flash */
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">iurii.sugrobov</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Contacts</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Dark theme">light</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div>
+          <div class="hero__meta">
+            <span class="badge badge--pass">Open to relocation</span>
+            <span class="badge badge--warn">English B1–B2</span>
+          </div>
+          <h1 id="hero-title">Iurii Sugrobov</h1>
+          <p class="hero__role">QA Fullstack Engineer. I build test automation in Java, Kotlin and TypeScript.</p>
+          <p class="hero__facts mono"><span>Based in Georgia</span><span>UI · API · DB</span></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="assets/Sugrobov_Iurii_QA_en.pdf" download>Download résumé (PDF)</a>
+            <a class="btn" href="#contacts">Contact me</a>
+          </div>
+        </div>
+
+        <figure class="run" aria-labelledby="run-title" style="margin:0">
+          <div class="run__head mono">
+            <span id="run-title">Regression run, Alfa-Bank</span>
+            <span>~3,000 tests</span>
+          </div>
+          <div class="run__body">
+            <div>
+              <div class="run__row-label"><span class="mono">Before: previous framework</span><strong>45 min</strong></div>
+              <div class="bar" role="img" aria-label="45 minutes"><div class="bar__fill bar__fill--old" style="width:100%"></div></div>
+            </div>
+            <div>
+              <div class="run__row-label"><span class="mono">After: framework I built</span><strong>9 min</strong></div>
+              <div class="bar" role="img" aria-label="9 minutes, 5 times shorter"><div class="bar__fill bar__fill--new" style="width:20%"></div></div>
+            </div>
+          </div>
+          <figcaption class="run__foot mono">Same scope, 5× faster. Tests migrated to the new framework.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
