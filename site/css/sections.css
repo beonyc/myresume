@@ -80,8 +80,6 @@
 .contacts a { font-weight: 600; width: fit-content; padding-block: 0.25rem; }
 @media (min-width: 40rem) { .contacts li { grid-template-columns: 8rem 1fr; gap: 1.5rem; align-items: center; } }
 
-.site-footer { border-top: 1px solid var(--line); padding-block: 1.5rem; color: var(--ink-soft); }
-
 /* Skills: make row names stand out from the tags */
 .facts--skills .facts__row dt {
   font-family: var(--font-sans);
