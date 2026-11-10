@@ -68,3 +68,7 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .theme-toggle:hover { background: var(--surface-2); }
 @media (max-width: 40rem) { .nav a { display: none; } }
+
+/* Typography: no one-word last lines, balanced headings and short statements */
+p, li, dd, figcaption { text-wrap: pretty; }
+h1, h2, h3, h4, .run__statement { text-wrap: balance; }
