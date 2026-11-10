@@ -46,7 +46,7 @@
 @media (min-width: 40rem) { .facts__row { grid-template-columns: 8rem 1fr; gap: 1.5rem; } }
 
 /* Experience: pipeline timeline */
-.jobs { position: relative; display: grid; gap: 2.5rem; max-width: 48rem; padding-left: 1.5rem; border-left: 2px solid var(--line); }
+.jobs { position: relative; display: grid; gap: 2.5rem; max-width: calc(48rem + 1.5rem + 2px); padding-left: 1.5rem; border-left: 2px solid var(--line); }
 .job { position: relative; display: grid; gap: 1.1rem; }
 .job::before {
   content: ""; position: absolute; left: calc(-1.5rem - 7px); top: 0.55rem;
@@ -107,3 +107,6 @@
   font-family: var(--font-sans); font-size: var(--step-0); font-weight: 700; color: var(--ink);
   padding-left: 0.6rem; border-left: 3px solid var(--pass);
 }
+
+/* One width for all boxed blocks (Skills, Education, Contacts, Experience) */
+#contacts .section__body { max-width: 48rem; }
