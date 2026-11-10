@@ -113,8 +113,8 @@
 /* One width for all boxed blocks (Skills, Education, Contacts, Experience) */
 #contacts .section__body { max-width: 48rem; }
 
-/* About, Experience, Contacts: align the heading with the first line of content */
-@media (min-width: 60rem) { #about .section__grid, #experience .section__grid, #contacts .section__grid { align-items: baseline; } }
+/* About, Experience: align the heading with the first line of content */
+@media (min-width: 60rem) { #about .section__grid, #experience .section__grid { align-items: baseline; } }
 
-/* About text and the Contacts intro line start where the Alfa-Bank heading starts */
-@media (min-width: 60rem) { #about .section__body > p, #contacts .section__body > p { padding-left: 1.5rem; } }
+/* About text starts where the Alfa-Bank heading starts */
+@media (min-width: 60rem) { #about .section__body > p { padding-left: 1.5rem; } }
