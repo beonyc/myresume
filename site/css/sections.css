@@ -113,5 +113,5 @@
 /* One width for all boxed blocks (Skills, Education, Contacts, Experience) */
 #contacts .section__body { max-width: 48rem; }
 
-/* Experience: align the heading with the first line (company name) */
-@media (min-width: 60rem) { #experience .section__grid { align-items: baseline; } }
+/* About, Experience, Contacts: align the heading with the first line of content */
+@media (min-width: 60rem) { #about .section__grid, #experience .section__grid, #contacts .section__grid { align-items: baseline; } }
